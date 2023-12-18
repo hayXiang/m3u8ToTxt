@@ -16,7 +16,7 @@ public class App
         }
 
         if (args.length < 2){
-            System.err.println("java -java m3u8Totxt.java");
+            System.err.println("java -java m3u8ToTxt.java");
             return;
         }
 
