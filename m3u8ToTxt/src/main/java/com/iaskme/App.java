@@ -16,7 +16,7 @@ public class App
         }
 
         if (args.length < 2){
-            System.err.println("java -java m3u8ToTxt.java");
+            System.err.println("java -java m3u8Totxt.java");
             return;
         }
 
@@ -64,7 +64,7 @@ public class App
                     } catch (Exception e){
                         System.err.println(e);
                     }
-                }else{
+                }else if (!line.startsWith("#")){
                     List<ChannelInfo> channelInfos = channelGroups.get(currentGroupName);
                     try {
                         channelInfos.get(channelInfos.size() - 1).url = line.trim();
