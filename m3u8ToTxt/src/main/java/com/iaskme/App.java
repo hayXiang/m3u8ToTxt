@@ -62,6 +62,7 @@ public class App
                         channelInfo.name = channelName;
                         channelGroups.get(currentGroupName).add(channelInfo);
                     } catch (Exception e){
+                        System.err.println(line);
                         System.err.println(e);
                     }
                 }else if (!line.startsWith("#")){
